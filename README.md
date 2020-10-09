@@ -1,13 +1,9 @@
 # Solidus Tax Exemptions
 
-<!-- Replace REPO_ORG and uncomment the following to show badges for CI and coverage. -->
+[![CircleCI](https://circleci.com/gh/SuperGoodSoft/solidus_tax_exemptions.svg?style=shield)](https://circleci.com/gh/SuperGoodSoft/solidus_tax_exemptions)
+[![codecov](https://codecov.io/gh/SuperGoodSoft/solidus_tax_exemptions/branch/master/graph/badge.svg)](https://codecov.io/gh/SuperGoodSoft/solidus_tax_exemptions)
 
-<!--
-[![CircleCI](https://circleci.com/gh/REPO_ORG/solidus_tax_exemptions.svg?style=shield)](https://circleci.com/gh/REPO_ORG/solidus_tax_exemptions)
-[![codecov](https://codecov.io/gh/REPO_ORG/solidus_tax_exemptions/branch/master/graph/badge.svg)](https://codecov.io/gh/REPO_ORG/solidus_tax_exemptions)
--->
-
-[Explain what your extension does.]
+FIXME: add description
 
 ## Installation
 
