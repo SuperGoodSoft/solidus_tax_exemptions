@@ -1,0 +1,5 @@
+bump:
+  recurse: false
+  file: 'lib/solidus_tax_exemptions/version.rb'
+  message: Bump SolidusTaxExemptions to %{version}
+  tag: true
