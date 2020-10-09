@@ -8,14 +8,14 @@ Gem::Specification.new do |spec|
   spec.authors = ['Jared Norman']
   spec.email = 'jared@super.gd'
 
-  spec.summary = 'TODO: Write a short summary, because RubyGems requires one.'
-  spec.description = 'TODO: Write a longer description or delete this line.'
-  spec.homepage = 'https://github.com/jarednorman/solidus_tax_exemptions'
+  spec.summary = 'An extensible interface for custom tax exemptions'
+  spec.description = spec.summary
+  spec.homepage = 'https://github.com/SuperGoodSoft/solidus_tax_exemptions'
   spec.license = 'BSD-3-Clause'
 
   spec.metadata['homepage_uri'] = spec.homepage
-  spec.metadata['source_code_uri'] = 'https://github.com/jarednorman/solidus_tax_exemptions'
-  spec.metadata['changelog_uri'] = 'https://github.com/jarednorman/solidus_tax_exemptions/releases'
+  spec.metadata['source_code_uri'] = 'https://github.com/SuperGoodSoft/solidus_tax_exemptions'
+  spec.metadata['changelog_uri'] = 'https://github.com/SuperGoodSoft/solidus_tax_exemptions/releases'
 
   spec.required_ruby_version = Gem::Requirement.new('~> 2.5')
 
