@@ -1,7 +1,5 @@
 module SolidusTaxExemptions
   class TaxCalculator
-    cattr_accessor :exempt_order_check, :default_tax_calculator
-
     def initialize(order)
       @order = order
     end
@@ -14,12 +12,20 @@ module SolidusTaxExemptions
           shipment_taxes: []
         )
       else
-        default_tax_calculator.constantize.new(order).calculate
+        default_tax_calculator.new(order).calculate
       end
     end
 
     private
 
     attr_reader :order
+
+    def exempt_order_check
+      SolidusTaxExemptions.configuration.exempt_order_check.new
+    end
+
+    def default_tax_calculator
+      SolidusTaxExemptions.configuration.default_tax_calculator
+    end
   end
 end

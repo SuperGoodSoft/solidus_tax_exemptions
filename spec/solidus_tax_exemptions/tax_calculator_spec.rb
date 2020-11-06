@@ -6,9 +6,18 @@ RSpec.describe SolidusTaxExemptions::TaxCalculator do
 
     let(:order) { instance_double Spree::Order, id: 123, number: number }
 
+    let(:exempt_order_check) {
+      Class.new do
+        def call(order)
+          order.number == "EXEMPT"
+        end
+      end
+    }
+
     before do
-      described_class.exempt_order_check = -> (order) { order.number == "EXEMPT" }
-      described_class.default_tax_calculator = "Spree::TaxCalculator::Default"
+      SolidusTaxExemptions.configure do |config|
+        config.exempt_order_check = exempt_order_check
+      end
     end
 
     context "when the order is exempt" do
